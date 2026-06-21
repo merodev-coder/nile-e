@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 15%;
+    --primary: 224 76% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 222 47% 15%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 222 20% 40%;
+    --accent: 210 20% 96%;
+    --accent-foreground: 222 47% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 224 76% 48%;
+    --radius: 0.625rem;
+
+    --color-navy: #111B37;
+    --color-navy-light: #1E3A8A;
+    --color-white: #FFFFFF;
+    --color-bg-grey: #F4F6F8;
+    --color-accent-green: #10B981;
+    --color-accent-orange: #F59E0B;
+    --color-accent-blue: #3B82F6;
+    --color-accent-purple: #8B5CF6;
+    --color-accent-red: #EF4444;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
